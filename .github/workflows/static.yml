@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy thestack docs to github pages
+name: Deploy codora docs to github pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -33,7 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload the build from the docs directory
           path: 'docs/build/'
       - name: Deploy to GitHub Pages
         id: deployment

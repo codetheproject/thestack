@@ -1,7 +1,7 @@
 use crate::Validator;
+use codora::new;
 use serde::Serialize;
 use std::{borrow::Cow, collections::HashMap};
-use thestack::new;
 
 pub struct ValidatorContext<T, V> {
     validator: V,

@@ -162,6 +162,40 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "codora"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "derive-new",
+ "serde",
+ "tokio",
+ "tower-layer",
+]
+
+[[package]]
+name = "codora-axum"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "axum",
+ "axum-extra",
+ "codora",
+ "serde",
+ "tokio",
+ "validator",
+]
+
+[[package]]
+name = "codora-validator"
+version = "0.8.3"
+dependencies = [
+ "codora",
+ "serde",
+ "serde_valid",
+ "validator",
+]
+
+[[package]]
 name = "darling"
 version = "0.20.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -628,9 +662,9 @@ dependencies = [
 
 [[package]]
 name = "once_cell"
-version = "1.21.0"
+version = "1.21.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cde51589ab56b20a6f686b2c68f7a0bd6add753d697abf720d63f8db3ab7b1ad"
+checksum = "d75b0bedcc4fe52caa0e03d9f1151a323e4aa5e2d78ba3580400cd3c9e2bc4bc"
 
 [[package]]
 name = "parking_lot"
@@ -956,60 +990,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
-]
-
-[[package]]
-name = "thestack"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "derive-new",
- "serde",
- "tokio",
- "tower-layer",
-]
-
-[[package]]
-name = "thestack-actix"
-version = "0.1.0"
-
-[[package]]
-name = "thestack-axum"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "axum",
- "axum-extra",
- "serde",
- "thestack",
- "tokio",
- "validator",
-]
-
-[[package]]
-name = "thestack-derive"
-version = "0.8.3"
-
-[[package]]
-name = "thestack-iam"
-version = "0.8.3"
-
-[[package]]
-name = "thestack-mysql"
-version = "0.1.0"
-
-[[package]]
-name = "thestack-postgres"
-version = "0.1.0"
-
-[[package]]
-name = "thestack-validator"
-version = "0.8.3"
-dependencies = [
- "serde",
- "serde_valid",
- "thestack",
- "validator",
 ]
 
 [[package]]

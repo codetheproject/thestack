@@ -1,5 +1,5 @@
 [package]
-name = "thestack"
+name = "codora"
 version = "0.1.0"
 edition = "2021"
 
@@ -22,11 +22,7 @@ tokio = { version = "1.44.0", features = ["full"] }
 
 
 [workspace]
-members = [
-  # core crates for thestack-rs authentication and authorization
-  ".",
-  "crates/*",
-]
+members = [".", "crates/*"]
 resolver = "2"
 
 
@@ -36,9 +32,9 @@ resolver = "2"
 version = "0.8.3"
 license = "MIT OR Apache-2.0"
 edition = "2021"
-repository = "https://github.com/codetheproject/thestack"
+repository = "https://github.com/getcodora/codora"
 # TODO Add other important keyword!
-keywords = ["authentication", "authorization", "thestack", "thestack-rs"]
+keywords = ["authentication", "authorization", "codora"]
 categories = ["web-programming", "security", "authentication", "authorization"]
 authors = ["West Sheriff <west.sh.mail@gmail.com>"]
 

@@ -8,10 +8,10 @@
 // - Lint for missing docs
 #![cfg_attr(not(debug_assertions), deny(missing_docs))]
 //!
-//! # thestack
+//! # codora
 //!
-//! Write some docs about the thestack here!
-#![doc = include_str!("../docs/thestack.md")]
+//! Write some docs about the codora here!
+// #![doc = include_str!("../docs/codora.md")]
 
 mod context;
 mod provider;
@@ -20,7 +20,7 @@ mod state;
 // TODO -> Inline docs
 pub mod security {
     //!
-    //! This is the security module for thestack
+    //! This is the security module for codora
     pub use crate::{
         context::{
             handler::Handler,

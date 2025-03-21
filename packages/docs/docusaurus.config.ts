@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'thestack',
+  title: 'codora',
   tagline: 'WIP please check back later!',
   favicon: 'img/favicon.ico',
 
@@ -13,12 +13,12 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/thestack',
+  baseUrl: '/codora',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'codetheproject', // Usually your GitHub org/user name.
-  projectName: 'thestack', // Usually your repo name.
+  projectName: 'codora', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -52,14 +52,14 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'thestack',
+      title: 'codora',
       logo: {
-        alt: 'thestack logo',
+        alt: 'codora logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          href: 'https://github.com/codetheproject/thestack',
+          href: 'https://github.com/codetheproject/codora',
           label: 'GitHub',
           position: 'right',
         },

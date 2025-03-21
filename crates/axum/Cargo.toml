@@ -1,5 +1,5 @@
 [package]
-name = "thestack-axum"
+name = "codora-axum"
 version = "0.1.0"
 edition = "2021"
 
@@ -12,7 +12,7 @@ axum = "0.8.1"
 tokio = { version = "1.43.0", features = ["full"] }
 axum-extra = { version = "0.10.0", features = ["typed-routing"] }
 validator = { version = "0.20.0", features = ["derive"] }
-thestack = { version = "0.1.0", path = "../.." }
+codora = { version = "0.1.0", path = "../.." }
 serde = { workspace = true, features = ["derive"] }
 
 [dev-dependencies]

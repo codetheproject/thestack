@@ -74,3 +74,7 @@ Thumbs.db
 docs/.docusaurus
 .docusaurus
 **/.docusaurus
+
+# templates
+templates/*
+**/templates

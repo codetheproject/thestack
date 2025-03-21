@@ -1,5 +1,5 @@
 [package]
-name = "thestack-validator"
+name = "codora-validator"
 version.workspace = true
 license.workspace = true
 edition.workspace = true
@@ -9,7 +9,7 @@ categories.workspace = true
 authors.workspace = true
 
 [dependencies]
-thestack = { version = "0.1.0", path = "../.." }
+codora = { version = "0.1.0", path = "../.." }
 serde = { workspace = true, features = ["derive"] }
 serde_valid = { version = "1.0.5", optional = true }
 validator = { version = "0.20.0", features = ["derive"], optional = true }

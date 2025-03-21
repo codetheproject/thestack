@@ -8,9 +8,9 @@
 // - Lint for missing docs
 #![cfg_attr(not(debug_assertions), deny(missing_docs))]
 //!
-//! # thestack-extractor
+//! # codora-extractor
 //!
-//! Write some docs about the thestack-validator here!
+//! Write some docs about the codora-validator here!
 mod context;
 pub use context::{Error, ValidatorContext};
 pub use validator::Validate;

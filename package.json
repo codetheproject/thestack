@@ -1,10 +1,9 @@
 {
-  "name": "thestack",
+  "name": "codora",
   "module": "index.ts",
   "type": "module",
   "workspaces": [
-    "packages/*",
-    "docs"
+    "packages/*"
   ],
   "devDependencies": {
     "@types/bun": "latest"
