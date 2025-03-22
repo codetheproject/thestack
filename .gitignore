@@ -4,6 +4,7 @@ package-lock.json
 pnpm-lock.yaml
 yarn.lock
 bun.lockb
+coverage
 
 # Ignore Rust target directory (compiled binaries)
 target/
