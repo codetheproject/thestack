@@ -3,11 +3,12 @@ use codora::new;
 use serde::Serialize;
 use std::{borrow::Cow, collections::HashMap};
 
+type Vtor<T> = Option<Box<dyn Fn(&T) -> Result<(), Error>>>;
 pub struct ValidatorContext<T, V> {
     validator: V,
 
-    after_validator: Option<Box<dyn Fn(&T) -> Result<(), Error>>>,
-    before_validator: Option<Box<dyn Fn(&T) -> Result<(), Error>>>,
+    after_validator: Vtor<T>,
+    before_validator: Vtor<T>,
 }
 
 impl<T, V> ValidatorContext<T, V>

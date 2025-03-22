@@ -1,0 +1,27 @@
+{
+  "name": "@codora/codora-test",
+  "module": "index.ts",
+  "private": false,
+  "description": "Test package for codora",
+  "version": "1.0.0",
+  "type": "module",
+  "author": {
+    "name": "west",
+    "email": "west.sh.mail@gmail.com",
+    "url": "https://github.com/westshgit"
+  },
+  "readme": "README.MD",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest --coverage"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@vitest/coverage-v8": "3.0.9",
+    "vite": "^6.2.2",
+    "vitest": "^3.0.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

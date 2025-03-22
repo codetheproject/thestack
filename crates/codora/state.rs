@@ -21,24 +21,6 @@ impl Entry {
     }
 }
 
-// impl PartialEq
-
-pub enum Iter<'a> {
-    Single(Option<&'a Cow<'static, str>>),
-    Multiple(std::slice::Iter<'a, Cow<'static, str>>),
-}
-
-impl<'a> Iterator for Iter<'a> {
-    type Item = &'a Cow<'static, str>;
-
-    fn next(&mut self) -> Option<Self::Item> {
-        match self {
-            Iter::Single(v) => v.take(),
-            Iter::Multiple(iter) => iter.next(),
-        }
-    }
-}
-
 impl Extend<Cow<'static, str>> for Entry {
     fn extend<T: IntoIterator<Item = Cow<'static, str>>>(&mut self, iter: T) {
         match self {
@@ -61,6 +43,24 @@ impl IntoIterator for Entry {
         match self {
             Entry::Single(v) => IntoIterInner::Single(Some(v)),
             Entry::Multiple(v) => IntoIterInner::Multiple(v.into_iter()),
+        }
+    }
+}
+
+// impl PartialEq
+
+pub enum Iter<'a> {
+    Single(Option<&'a Cow<'static, str>>),
+    Multiple(std::slice::Iter<'a, Cow<'static, str>>),
+}
+
+impl<'a> Iterator for Iter<'a> {
+    type Item = &'a Cow<'static, str>;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        match self {
+            Iter::Single(v) => v.take(),
+            Iter::Multiple(iter) => iter.next(),
         }
     }
 }

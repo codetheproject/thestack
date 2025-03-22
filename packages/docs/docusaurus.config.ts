@@ -17,7 +17,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'codetheproject', // Usually your GitHub org/user name.
+  organizationName: 'getcodora', // Usually your GitHub org/user name.
   projectName: 'codora', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -59,7 +59,7 @@ const config: Config = {
       },
       items: [
         {
-          href: 'https://github.com/codetheproject/codora',
+          href: 'https://github.com/getcodora/codora',
           label: 'GitHub',
           position: 'right',
         },

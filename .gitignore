@@ -78,3 +78,6 @@ docs/.docusaurus
 # templates
 templates/*
 **/templates
+
+dev/**
+**/dev/**
